@@ -1,2 +1,2 @@
 # libraryApp
-Lista de livros feito em Vanila Javascript
+App de lista de livros feito em Vanila Javascript

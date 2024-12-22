@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <main id="app">
+        <section class="container-addLivro">
+            <h1 id="titulo-mbiblioteca">Minha Biblioteca</h1>
+            <p class="msg-vazio">Biblioteca Vazia...<br>Adicione os livros que leu ou deseja ler</p>
+            <button type="button" id="btnAddNovoLivro">+</button>
+            <form id="formulario" action="">
+                <h1>Adicionar Livro</h1>
+                <label for="titulo">Titulo do Livro</label><br>
+                <input type="text" name="titulo" id="titulo" placeholder="(ex. O Pequeno Príncipe)"><br><br>
+
+                <label for="capa">URL da Capa (opicional)</label><br>
+                <input type="text" name="capa" id="capa" placeholder="(ex. https://minhaimagem.jpg)"><br><br>
+
+                <label for="sinopse">Sinopse (opcional)</label><br>
+                <textarea type="text" name="sinopse" id="sinopse" rows="5"></textarea><br><br>
+
+                <label for="paginas">Quantidade de Páginas</label><br>
+                <input type="number" name="paginas" id="paginas" placeholder="(ex. 198)"><br><br>
+
+                <label for="ano">Ano de Publicação</label><br>
+                <input type="number" name="ano" id="ano" placeholder="(ex. 1991)"><br><br>
+
+                <label for="lido">Já leu esse livro?</label><br>
+                <select name="lido" id="lido">
+                    <option value="sim">Sim</option>
+                    <option value="nao" selected>Não</option>
+                    <option value="lendo">Estou Lendo</option>
+                </select><br><br>
+                
+                <button id="btnAdicionar" type="submit">Adicionar</button>
+                <button id="btnFechar" type="submit">Fechar</button>
+            </form>
+        </section>
+        <ul id="livros"></ul>
+    </main>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
